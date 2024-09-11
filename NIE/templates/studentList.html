@@ -1,0 +1,14 @@
+{% include "basic.html" %}
+
+ {% block content %}
+
+ {% for student in students %}
+ 
+ Name:{{student.name}}<br>
+ Department:{{student.department}}<br>
+ College name:{{student.college_name}}<br>
+ Roll no. :{{student.rollnumber}}<br>
+ <hr>
+ {% endfor %}
+ 
+ {% endblock %}
