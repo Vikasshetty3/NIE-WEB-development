@@ -43,39 +43,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'CSE:forms' %}">Student Apply</a>
               </li>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  FBV_Student
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'CSE:student' %}">FBV-List</a></li>
-                  <li><a class="dropdown-item" href="{% url 'CSE:form' %}">FBV-regiration</a></li>
-                  <li><a class="dropdown-item" href="{% url 'CSE:nie' %}">GET-POST Addision of two numbers</a></li>
-                  <li><a class="dropdown-item" href="{% url 'CSE:register' %}">User - Registration </a></li>
-                  <li><a class="dropdown-item" href="{% url 'CSE:login' %}">login </a></li>
-                  <li><a class="dropdown-item" href="{% url 'CSE:logout' %}">logout </a></li>
-                </ul>
-              </div>
-
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  CBV_Student
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'CSE:list' %}">CBV-List</a></li>
-                  <li><a class="dropdown-item" href="{% url 'CSE:forms' %}">CBV-regiration</a></li>
-                 
-                </ul>
-              </div>
-              <div>
-                {% if user.is_authenticated %}
-                      <p>Welcome, {{ user.username }}!</p>
-                {% else %}
-                      <p>Welcome, Guest!</p>
-                {% endif %}
-
-              </div>
               
                           
           </div>
